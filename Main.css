@@ -1,0 +1,285 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+header {
+    background-color: #03506f;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+}
+.img-titulo{
+    float: left;
+    margin-right: 20px;
+    height: 150px;
+    width: 150px;
+    margin-top: 5px;
+    
+}
+
+.img-columna {
+    width: 100%;
+}
+
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ffe3de;
+    padding: 20px;
+
+}
+
+
+.nav-enlace{
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #252525;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3.5em;
+    font-weight: 400;
+    margin: 0 0 2em 2em;
+
+}
+
+.nav-enlace:hover{
+    color: #a3ddcb;
+}
+
+  /* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 2em;
+}
+  
+  /* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: whitesmoke;
+    padding: 10px;
+
+}
+
+.contenido{
+    padding: 2em;
+    font-display: block;
+    width: 1em;
+}
+
+.Articulo{
+    font-display: block;
+    margin: 0 2em 1em 2em;
+}
+.container{
+    margin: 3 auto;
+    width: 90%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.Enlaces {
+    font-weight: 800;
+    font-size: 2em;
+    text-decoration: none;
+    text-align: center;
+    color: #252525;
+    margin: 0 0 2em 1em;    
+}
+
+.Enlaces-Main {
+    font-weight: 800;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    color: #252525;
+   
+}
+
+.Enlaces2 {
+    font-weight: 800;
+    font-size: 32px;
+    text-decoration: none;
+    text-align: center;
+    color: #252525;
+   
+}
+
+.Enlaces3 {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: #252525;
+    font-display:block;
+    margin: 0 0 2em 21.5em;
+   
+}
+
+.Enlaces4 {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: #252525;
+    font-display:block;
+    margin: 0 0 2em 0;
+   
+}
+
+.Enlaces:hover {
+    color: #a3ddcb;   
+}
+
+.Enlaces-Main:hover{
+    color: #a3ddcb;   
+}
+
+.Enlaces2:hover{
+    color: #a3ddcb;   
+}
+
+.Enlaces3:hover{
+    color: #a3ddcb;   
+}
+
+.Enlaces4:hover{
+    color: #a3ddcb;   
+}
+
+.Titulo {
+    font-weight: 800;
+    font-size: 2.2em;
+    text-decoration: none;
+    color: #252525;
+    margin: 0 0 1em 1.2em;    
+}
+
+.Titulo-Articulo {
+    font-weight: 800;
+    font-size: 2.2em;
+    text-decoration: none;
+    color: #252525;
+    margin: 0 0 1em 0;    
+}
+
+.Parrafo {
+    font-weight: 400;
+    font-size: 1em;
+    text-decoration: none;
+    color: #252525;
+    
+}
+
+.columna{
+    background: rgb(228, 228, 228);
+    color: #333;
+    border: 1px solid #333;
+    margin: 2em auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 15px #888;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.columna-noticia {
+    background: rgb(228, 228, 228);
+    color: #333;
+    border: 1px solid #333;
+    margin: 1em auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 15px #888;
+    width: 90%;
+    box-sizing: border-box;
+}
+  
+  /* Style the footer */
+footer {
+    background-color: #03506f;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+        flex-flow: column;
+                    
+    }
+    nav {
+        width: 100%;
+    }
+    article{
+        width: 100%;        
+        padding: 0;
+        min-width: 100%
+
+    }
+
+    header {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .columna {
+        flex-flow: row;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .img-columna {
+        width: 100%;
+    }
+
+    .img-titulo {
+        float: unset;
+        width: 150px;
+        height: 150px;
+    }
+
+    .Articulo{
+        flex-flow: column;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .Parrafo{
+        width: fit-content;
+        margin: 0.5em 0.5em 0.5em 0.5em;
+        text-align: justify;
+    }
+
+    .Enlaces {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1070px) {
+    .columna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
